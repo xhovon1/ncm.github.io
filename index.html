@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoCodeML - Your Pocket Data Scientist</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts for professional typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use the Inter font family defined in the Google Fonts link */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple animation for section fade-in on scroll (optional but nice) */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header / Hero Section -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <div class="mx-auto max-w-2xl">
+                <div class="flex justify-center mb-4">
+                    <!-- A simple SVG icon representing data/AI -->
+                    <svg class="h-20 w-20 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 1.087m1-1.087l1 1.087m0 0l-1 1.087m1-1.087l1 1.087m0 0l-1 1.087m1-1.087l1 1.087M12 12.75h.008v.008H12v-.008z" />
+                    </svg>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-900">NoCodeML</h1>
+                <p class="mt-4 text-lg text-slate-600">Your Pocket Data Scientist. Turn raw data into powerful predictions, right on your phone.</p>
+                <div class="mt-8">
+                    <!-- IMPORTANT: Make sure the name of your APK file here matches the one you uploaded -->
+                    <a href="./NoCodeML-v1.0.apk" 
+                       class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-indigo-700 transition-colors shadow-lg">
+                        Download APK (v1.0)
+                    </a>
+                    <p class="mt-2 text-sm text-slate-500">For Android devices</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Features Section -->
+        <section class="fade-in">
+            <h2 class="text-3xl font-bold text-center text-slate-900">Why You'll Love NoCodeML</h2>
+            <p class="text-center mt-2 text-slate-600">All the power, none of the complexity.</p>
+            <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Feature Card 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-slate-900">On-Device & Private</h3>
+                    <p class="mt-2 text-slate-600">All training and prediction happens 100% offline. Your data never leaves your device, ensuring complete privacy and security.</p>
+                </div>
+                <!-- Feature Card 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-slate-900">Powerful Algorithm Suite</h3>
+                    <p class="mt-2 text-slate-600">Go beyond simple models. Choose from over 10 industry-standard algorithms, including Random Forest and Gradient Boost.</p>
+                </div>
+                <!-- Feature Card 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-slate-900">Robust Cross-Validation</h3>
+                    <p class="mt-2 text-slate-600">No more guessing. The app automatically performs 5-fold cross-validation to provide reliable, real-world performance metrics.</p>
+                </div>
+                 <!-- Feature Card 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-slate-900">Hyperparameter Tuning</h3>
+                    <p class="mt-2 text-slate-600">Fine-tune your models like a pro with intuitive sliders for key parameters like the number of trees or max nodes.</p>
+                </div>
+                 <!-- Feature Card 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-slate-900">Flexible Prediction</h3>
+                    <p class="mt-2 text-slate-600">Test your trained models on new CSV files or enter data for a single prediction manually through a simple form.</p>
+                </div>
+                 <!-- Feature Card 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-slate-900">Export Your Results</h3>
+                    <p class="mt-2 text-slate-600">Save your prediction results, including the original data and the new "Predicted_Label" column, to a new CSV file with a single tap.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- "How It Works" Section -->
+        <section class="mt-20 fade-in">
+            <h2 class="text-3xl font-bold text-center text-slate-900">Get Insights in 3 Simple Steps</h2>
+             <div class="mt-12 grid gap-8 md:grid-cols-3 text-center">
+                <!-- Step 1 -->
+                <div>
+                    <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">1</div>
+                    <h3 class="mt-4 text-xl font-bold">Import CSV</h3>
+                    <p class="mt-2 text-slate-600">Select any tabular data file from your device.</p>
+                </div>
+                <!-- Step 2 -->
+                 <div>
+                    <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">2</div>
+                    <h3 class="mt-4 text-xl font-bold">Train Model</h3>
+                    <p class="mt-2 text-slate-600">Choose your target, select an algorithm, and tap "Start Training".</p>
+                </div>
+                <!-- Step 3 -->
+                <div>
+                    <div class="bg-indigo-100 text-indigo-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">3</div>
+                    <h3 class="mt-4 text-xl font-bold">Get Predictions</h3>
+                    <p class="mt-2 text-slate-600">Use your trained model to predict outcomes on new data.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white mt-12">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <h3 class="text-xl font-bold text-slate-900">Support the Developer</h3>
+            <p class="mt-2 text-slate-600">NoCodeML is built and maintained by a solo developer. Your support helps fuel future development!</p>
+            
+            <div class="mt-6">
+                <p class="font-semibold">Contact & Feedback:</p>
+                <a href="mailto:xhovon1@gmail.com" class="text-indigo-600 hover:underline">xhovon1@gmail.com</a>
+            </div>
+            
+            <div class="mt-4">
+                <p class="font-semibold">Donations Appreciated (BTC):</p>
+                <div id="btc-container" class="mt-2 inline-flex items-center bg-slate-100 rounded-lg p-2 cursor-pointer" onclick="copyBtcAddress()">
+                    <code id="btc-address" class="text-sm text-slate-700">37wkwif38829amPiwimFmcMr4XVgiHiA9w</code>
+                    <svg id="copy-icon" class="h-5 w-5 text-slate-500 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.03 1.125 0 1.131.094 1.976 1.057 1.976 2.192V7.5m-9 7.5h9v-7.5h-9zM9 9.75h.008v.008H9v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm4.125 4.5h.008v.008h-.008v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                    <span id="copy-feedback" class="text-sm text-indigo-600 font-bold ml-2 hidden">Copied!</span>
+                </div>
+            </div>
+
+            <p class="mt-8 text-sm text-slate-500">&copy; 2025 NoCodeML. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for the "Copy to Clipboard" functionality
+        function copyBtcAddress() {
+            const addressText = document.getElementById('btc-address').innerText;
+            navigator.clipboard.writeText(addressText).then(() => {
+                // Provide visual feedback
+                const copyIcon = document.getElementById('copy-icon');
+                const copyFeedback = document.getElementById('copy-feedback');
+                
+                copyIcon.classList.add('hidden');
+                copyFeedback.classList.remove('hidden');
+
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    copyIcon.classList.remove('hidden');
+                    copyFeedback.classList.add('hidden');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+        
+        // Simple fade-in effect on scroll
+        const faders = document.querySelectorAll('.fade-in');
+        const appearOptions = {
+            threshold: 0.2,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('visible');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+
+</body>
+</html>
+
